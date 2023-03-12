@@ -42,6 +42,10 @@
   (ring-jetty/run-jetty #'app {:port  3001
                                :join? false}))
 
-(def server (start))
+(def server {})
 
-(.stop server)
+(defn main [& args]
+  (assoc server :server (start)))
+
+(defn stop []
+  (.stop (:server server)))

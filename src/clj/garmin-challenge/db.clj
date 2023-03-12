@@ -2,7 +2,7 @@
   (:require [clojure.java.jdbc :as j]
             [honey.sql :as sql]
             [honey.sql.helpers :refer :all]
-            [shorturl.env :refer [env]]))
+            [garmin-challenge.env :refer [env]]))
 
 ;; https://github.com/clojure/java.jdbc
 ;; https://github.com/seancorfield/honeysql
